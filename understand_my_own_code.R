@@ -62,8 +62,9 @@ anomalies[output[[2]]]<-input_ts[(output[[2]]+1)]
 plot(input_ts[2:length(input_ts)], type="l", main="Plot of time series and anomalies")
 points(anomalies, y=NULL, type="p", col="purple", pch=20)
 plot(x1[2:500], type="l")
-output<-cad(x1[1:500],delta=3, lambda=3,type= "upper",number_of_windows=1)
+output<-cad(x1[1:500],delta=3, lambda=5,type= "lower",number_of_windows=8)
 output
+unique(output[[2]])
 danomalies<-rep(NA, 499)
 anomalies[output[[2]]]<-x1[(output[[2]]+1)]
 plot(x1[150:350], type="l", main="Plot of time series and anomalies")

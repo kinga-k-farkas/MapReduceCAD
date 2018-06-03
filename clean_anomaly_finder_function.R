@@ -13,7 +13,7 @@ anomaly_finder <- function(time_series,delta,lambda, type="upper", number_of_win
       require(zoo)
       n<-length(time_series)
       stop_now<-FALSE
-      source("training_data_finder_function.R")
+      source("clean_training_data_finder_function.R")
       source("clean_evaluate_cusum_results_function.R")
       training_data_object <- training_data_finder(time_series)
       if (length(training_data_object$training_data) == 0) {

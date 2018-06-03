@@ -4,10 +4,10 @@
 
 training_data_finder <- function(sequence){
       
-      source("normality_finder_function.R")
-      source("checker_function.R")
-      source("parameter_finder_function.R")
-      source("show_trainer_normality_function.R")
+      source("clean_normality_finder_function.R")
+      source("clean_checker_function.R")
+      source("clean_parameter_finder_function.R")
+     # source("show_trainer_normality_function.R")
       n <-length(sequence)
       #stopifnot(n>=75)
       segment_found<-FALSE

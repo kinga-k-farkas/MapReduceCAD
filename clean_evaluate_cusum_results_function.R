@@ -7,8 +7,8 @@ evaluate_cusum_results<-function(seq,xbar,sigma, H, k, type= "upper",lambda){
       options(expressions=10000)
       require(qcc)
       require(dplyr)
-      source("find_turning_points_function.R")
-      source("find_intervals_function.R")
+      source("clean_find_turning_points_function.R")
+      source("clean_find_intervals_function.R")
       hi_sum_anomaly_indices<-c()
       low_sum_anomaly_indices <-c()
       upper_anomaly_indices<-NULL
